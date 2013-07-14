@@ -29,14 +29,12 @@ import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedSourceVersion;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.type.TypeMirror;
 import javax.tools.Diagnostic.Kind;
-import javax.lang.model.SourceVersion;
 import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Modifier;
 
@@ -44,12 +42,10 @@ import javax.lang.model.element.Modifier;
  * This annotation processor examines methods marked {@link com.jasonstedman.extensions.AbstractFinal}
  * 
  * @author Jason Stedman
- * @version 1.0
+ * @version 1.1
  * 
  */
-@SuppressWarnings("restriction")
 @SupportedAnnotationTypes("com.jasonstedman.extensions.AbstractFinal")
-@SupportedSourceVersion(SourceVersion.RELEASE_7)
 public class AbstractFinalAnnotationProcessor extends AbstractProcessor {
 
 	@Override

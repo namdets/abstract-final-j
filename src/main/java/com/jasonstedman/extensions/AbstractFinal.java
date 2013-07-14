@@ -39,7 +39,7 @@ import java.lang.annotation.Target;
  * a method that should only be overidden once.
  * 
  * @author Jason Stedman
- * @version 1.0
+ * @version 1.1
  *
  */
 @Target(value = ElementType.METHOD)
